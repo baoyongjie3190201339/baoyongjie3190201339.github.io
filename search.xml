@@ -25,6 +25,27 @@
     
     
     <entry>
+      <title>Netlify自定义域名</title>
+      <link href="/2023/02/25/yuming/"/>
+      <url>/2023/02/25/yuming/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在Netlify托管个人博客后，Netlify会默认给我们生成一个域名，但是这个域名没有任何意义且复杂。我们可以自定义这个域名。</p><h1 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h1><p>首先需要购买一个自己的域名，可以在阿里云，腾讯云等购买，博主的域名在阿里云购买，价格为8元/年<br><img src="/img/28.png" alt="1"><br>等待域名实名认证<br><img src="/img/29.png" alt="1"></p><h1 id="域名配置"><a href="#域名配置" class="headerlink" title="域名配置"></a>域名配置</h1><p>在Netlify上添加自定义域名<br><img src="/img/30.png" alt="1"></p><p>去域名控制台解析一条CNAME记录，记录值为你的Netlify生成的域名，生成二级域名<br><img src="/img/31.png" alt="1"></p><h1 id="添加SSL"><a href="#添加SSL" class="headerlink" title="添加SSL"></a>添加SSL</h1><p>此时的博客在访问时会有网站不安全的标志，我们需要添加<code>SSL证书</code><br>Netlify也提供免费证书发放服务，点击<code>Let&#39;s Encrypt</code>申请证书<br><img src="/img/32.png" alt="1"></p><p>等待证书发放，这样就可以通过购买的域名访问博客</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> blog </tag>
+            
+            <tag> Netlify </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Netlify部署博客</title>
       <link href="/2023/02/25/%E5%8A%A0%E9%80%9F/"/>
       <url>/2023/02/25/%E5%8A%A0%E9%80%9F/</url>
@@ -78,7 +99,7 @@
     
     
     <entry>
-      <title>第一个文章</title>
+      <title>Hexo</title>
       <link href="/2023/02/24/hello-world/"/>
       <url>/2023/02/24/hello-world/</url>
       
