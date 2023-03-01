@@ -318,3 +318,14 @@ div#archive {
 .blog-slider__img img {
   border-radius: 20px !important;
 }
+
+
+
+/* 图标大小 */
+svg.icon {
+  width: 1.28em;
+  height: 1.28em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
