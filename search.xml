@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>初识FreeRTOS</title>
+      <link href="/2023/12/27/FreeRTOS/one/"/>
+      <url>/2023/12/27/FreeRTOS/one/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>写这一系列的文章目的主要是记录学习笔记，仅供参考。</p><h2 id="一、为什么要学习FreeRTOS"><a href="#一、为什么要学习FreeRTOS" class="headerlink" title="一、为什么要学习FreeRTOS"></a>一、为什么要学习FreeRTOS</h2><p>以往我们对单片机的开发通常是采用裸机开发。在裸机里，所有的操作都在一个While循环中进行；对于较为简单的系统，裸机通常是能够满足要求的。但是随着开发项目功能的增加，单纯的裸机需要考虑各个功能的逻辑，会使得编程难度加大。这时，采用<code>RTOS(Real Time Operating System)实时操作系统</code>是非常有必要的。采用<code>RTOS</code>可以实现多任务管理、调度。<code>RTOS</code>并不是值某一特定的操作系统，而是指一类操作系统，例如FreeRTOS，RTX，RT-Thread 等这些都是<code>RTOS</code>类的操作系统。而<code>FreeRTOS</code>是一款开源而且免费的实时操作系统。</p><h2 id="二、FreeRTOS的特点"><a href="#二、FreeRTOS的特点" class="headerlink" title="二、FreeRTOS的特点"></a>二、FreeRTOS的特点</h2><p>一、多任务系统。操作系统是允许多个任务<code>“同时运行”</code>的，操作系统的这个特性被称为多任务。实际上，一般使用的单片机只有一个核心，(一些高性能的芯片可能拥有多个核心，如英飞凌的TC364有两个核心，TC377有三个核心等等)。一个 CPU 核心在某一时刻只能运行一个任务，而操作系统中任务调度器的责任就是决定在某一时刻 CPU 究竟要运行哪一个任务，任务调度器使得 CPU 在各个任务之间来回切换并处理任务，由于切换处理任务的速度非常快，因此就给人造成了一种同一时刻有多个任务同时运行的错觉。操作系统的分类方式可以由任务调度器的工作方式决定，比如有的操作系统给每个任务分配同样的运行时间，时间到了就切换到下一个任务，Unix 操作系统就是这样的。RTOS 的任务调度器被设计为可预测的，而这正是嵌入式实时操作系统所需要的。在实时环境中，要求操作系统必须实时地对某一个事件做出响应，因此任务调度器的行为必须是可预测的。像 FreeRTOS这种传统的 RTOS 类操作系统是由用户给每个任务分配一个任务优先级，任务调度器就可以根据此优先级来决定下一刻应该运行哪个任务。<br>二、免费。这是很重要的一点，因为在做项目时是要考虑产品的成本的，免费的FreeRTOS 操作系统就是一个很好的选择，当然了，也可以选择其他免费的 RTOS 操作系统。<br>三、使用广泛。许多半导体厂商和软件厂商都在其产品中使用了 FreeRTOS 操作系统。比如，许多的半导体厂商都会在其产品的 SDK 包中使用 FreeRTOS 操作系统，尤其是涉及 Wi-Fi、蓝牙等这些带协议栈的芯片或模块；著名的 GUI 设计软件库 TouchGFX 在其软件的应用例程中使用了 FreeRTOS 操作系统；ST 公司也在其 STM32Cube 生态系统中加入了对 FreeRTOS 操作系统的支持。<br>四、资料齐全。在 FreeRTOS 操作系统的官网上 <a href="https://www.freertos.org/">链接</a>，提供了大量的FreeRTOS 操作系统的相关文档及例程源码。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> FreeRTOS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>发布blog</title>
       <link href="/2023/12/27/fangdai/publish/"/>
       <url>/2023/12/27/fangdai/publish/</url>
